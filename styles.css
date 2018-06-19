@@ -1,0 +1,299 @@
+/*
+
+ SCSS Name: Fleava Test
+ Description: This stylesheet for Fleava Application Test
+ Author: Dewa Alit
+
+*/
+.top-navbar {
+  transition: 0.5s all ease-in-out;
+  -webkit-transition: 0.5s all ease-in-out;
+  -moz-transition: 0.5s all ease-in-out; }
+
+.top-navbar .menu ul li, .full-header .header-content-container .header-content-wrapper a.header-btn, .full-header .header-content-container .header-content-wrapper a.header-btn:hover, .twitter-section .twitter-container .twitter-wrapper .twitter-btn {
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out; }
+
+.top-navbar .top-container {
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex; }
+
+/* Remove Left & Right Space in Row element */
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+/* Custom Font */
+@font-face {
+  font-family: 'Florencesans';
+  src: url("fonts/Florencesans.eot");
+  src: url("fonts/Florencesans.eot?#iefix") format("embedded-opentype"), url("fonts/Florencesans.woff2") format("woff2"), url("fonts/Florencesans.woff") format("woff"), url("fonts/Florencesans.svg#Florencesans") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Remove the decoration in all links */
+a:link, a:hover, a:active, a:visited {
+  text-decoration: none !important; }
+
+/* Remove Outline */
+button:focus, button:active, button:visited, button:hover, button:focus-within,
+.footer-form input[type="text"]:focus,
+.footer-form input[type="text"]:visited,
+.footer-form input[type="text"]:active,
+.footer-form input[type="text"]:hover,
+.footer-form input[type="text"]:active {
+  outline: unset !important; }
+
+/* Navbar */
+.top-navbar {
+  min-height: 80px;
+  padding: 10px;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 9; }
+  .top-navbar .top-container {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 25px; }
+  .top-navbar .logo {
+    padding: 20px 0; }
+    .top-navbar .logo img {
+      width: 100px; }
+  .top-navbar .menu {
+    flex: 1; }
+    .top-navbar .menu ul {
+      list-style: none;
+      padding-left: 0;
+      display: inline-block;
+      float: right;
+      padding: 20px 0;
+      margin-bottom: 0; }
+      .top-navbar .menu ul li {
+        display: inline-block;
+        font-family: "Florencesans";
+        font-size: 14px;
+        border: 2px solid transparent;
+        padding: 5px 15px;
+        text-transform: uppercase;
+        cursor: pointer; }
+        .top-navbar .menu ul li a, .top-navbar .menu ul li a:hover {
+          color: #fff; }
+      .top-navbar .menu ul li:hover, .top-navbar .menu ul li.active {
+        border: 2px solid #fff !important; }
+
+/* Class for navbar when it scrolled */
+.scrolled {
+  background: rgba(0, 0, 0, 0.7); }
+
+/* Fullscreen Header */
+.full-header {
+  background: url(media/background-bw.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  position: relative; }
+  .full-header .header-content-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%); }
+    .full-header .header-content-container .header-content-wrapper {
+      width: 66.66667%;
+      margin: 0 auto;
+      text-align: left; }
+      .full-header .header-content-container .header-content-wrapper .header-content {
+        margin-bottom: 35px; }
+        .full-header .header-content-container .header-content-wrapper .header-content span {
+          display: block;
+          font-size: 6em;
+          font-family: "Florencesans";
+          font-weight: bold;
+          text-transform: uppercase;
+          line-height: normal;
+          letter-spacing: 20px;
+          color: #fff; }
+      .full-header .header-content-container .header-content-wrapper a.header-btn {
+        display: inline-block;
+        font-family: "Florencesans";
+        background: #007bff;
+        padding: 10px 25px;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #fff; }
+      .full-header .header-content-container .header-content-wrapper a.header-btn:hover {
+        color: #037aff;
+        background: #fff; }
+  .full-header .scroll-bottom-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0); }
+    .full-header .scroll-bottom-wrapper .scroll-bottom {
+      width: 66.66667%;
+      display: block;
+      margin: 0 auto; }
+      .full-header .scroll-bottom-wrapper .scroll-bottom i {
+        font-size: 50px;
+        color: #fff; }
+
+/* Intro Text Section */
+.intro-text .intro-wrapper {
+  padding: 60px 0; }
+  .intro-text .intro-wrapper h1 {
+    font-family: "Florencesans";
+    font-size: 5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 10px;
+    margin-bottom: 35px; }
+  .intro-text .intro-wrapper p {
+    font-size: 16px;
+    line-height: 28px; }
+
+/* Carousel Section */
+.carousel-section {
+  position: relative;
+  margin-bottom: 90px; }
+  .carousel-section .carousel-image {
+    position: absolute !important;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%); }
+    .carousel-section .carousel-image .owl-item {
+      border: unset !important; }
+      .carousel-section .carousel-image .owl-item img {
+        display: block;
+        height: 350px;
+        object-fit: cover; }
+    .carousel-section .carousel-image .owl-dots {
+      margin-top: 25px !important; }
+      .carousel-section .carousel-image .owl-dots button.active {
+        border: unset !important; }
+      .carousel-section .carousel-image .owl-dots span {
+        color: #fff; }
+      .carousel-section .carousel-image .owl-dots .owl-dot.active span, .carousel-section .carousel-image .owl-dots .owl-dot:hover span {
+        background: #fff !important;
+        width: 13px;
+        height: 13px; }
+  .carousel-section .carousel-wrapper {
+    background: #037aff;
+    min-height: 500px;
+    border-radius: 10px; }
+
+/* Twitter Section */
+.twitter-section {
+  background-color: #037aff;
+  min-height: 335px;
+  margin-bottom: 90px; }
+  .twitter-section .twitter-container {
+    position: relative; }
+    .twitter-section .twitter-container .twitter-wrapper {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      transform: translate(0, -45%);
+      -webkit-transform: translate(0, -45%);
+      -moz-transform: translate(0, -45%); }
+      .twitter-section .twitter-container .twitter-wrapper .twitter-icon {
+        margin-bottom: 15px;
+        display: block; }
+        .twitter-section .twitter-container .twitter-wrapper .twitter-icon i {
+          color: #fff;
+          font-size: 2em; }
+      .twitter-section .twitter-container .twitter-wrapper .twitter-text {
+        font-size: 24px;
+        margin-bottom: 25px;
+        font-weight: 600;
+        color: #fff; }
+      .twitter-section .twitter-container .twitter-wrapper .twitter-btn {
+        color: #fff;
+        padding: 15px 30px;
+        background-color: #333;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: "Florencesans"; }
+      .twitter-section .twitter-container .twitter-wrapper .twitter-btn:hover {
+        background: #fff;
+        color: #333; }
+
+/* 3 Boxes Section */
+.box-section {
+  margin-bottom: 90px; }
+  .box-section .box-wrapper {
+    padding: 0 !important; }
+    .box-section .box-wrapper .box-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; }
+    .box-section .box-wrapper figcaption {
+      text-align: center;
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 11px; }
+    .box-section .box-wrapper .box-title {
+      text-align: center !important;
+      font-weight: bold;
+      margin-bottom: 25px;
+      display: block;
+      font-size: 24px; }
+    .box-section .box-wrapper .box-description {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 0; }
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 90px 0; }
+  footer .footer-top {
+    margin-bottom: 30px; }
+    footer .footer-top .footer-logo {
+      width: 100px;
+      margin-bottom: 15px; }
+    footer .footer-top .footer-text {
+      font-weight: 300; }
+    footer .footer-top .footer-title {
+      margin-bottom: 15px;
+      display: block;
+      text-transform: uppercase;
+      font-weight: bold; }
+    footer .footer-top .footer-list {
+      padding-left: 0;
+      list-style-position: inside;
+      list-style-type: none; }
+      footer .footer-top .footer-list a {
+        color: #fff; }
+      footer .footer-top .footer-list a:hover {
+        color: #037aff; }
+  footer .footer-form {
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    display: inline-block; }
+    footer .footer-form input[type="text"] {
+      border: unset;
+      background: none;
+      padding-right: 35px;
+      color: #fff; }
+    footer .footer-form button[type="submit"] {
+      border: unset;
+      background: none;
+      color: #fff; }
+    footer .footer-form button[type="submit"]:hover {
+      color: #037aff;
+      cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map */
